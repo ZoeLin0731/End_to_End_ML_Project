@@ -1,0 +1,29 @@
+1. Set up the github{Repository}
+    1.1 create a Repository in Github, no need to select any pre settings
+    1.2 create a project folder in local enviroment, and copy the path
+    1.3 open the terminal and type "code /Users/zoelin/Documents/GitHub/End_to_End_ML_Project" to access the folder
+    (If code doesn’t work, you may need to install the VS Code command-line tool: In VS Code → press Cmd+Shift+P → type Shell Command: Install 'code' command in PATH → press Enter.)
+2. New enviroment
+    2.1 open the terminal in vscode and type " conda create -p venv python==3.12 -y "
+         To activate this environment, use
+         "conda activate /Users/zoelin/Documents/GitHub/End_to_End_ML_Project/venv"
+         To deactivate an active environment, use
+         "conda deactivate"
+    2.2 then activate the new enviroment
+    2.3 need to initinalize the git, so type "git init" in the terminal
+    2.4 create "README.md" under the project folder in vscode (left list), then type the project description in the file.
+    2.5 type "git add README.md" in the terminal to add this file.
+    2.6 type " git commit -m "First Commit" " , use " git status" command to check every steps
+    2.7 push file into Github Repository
+        git branch -M main
+        git remote add origin https://github.com/ZoeLin0731/End_to_End_ML_Project.git
+        git remote -v
+        git push -u origin main
+        git config --global user.email  (can check user information)
+    2.8 create a .gitignore file in github Repository and select ignore "python" then commit
+    2.9 type "git pull" in the vscode enviroment to show the changes
+
+3. setup.py
+    3.1 write the codes in the file.
+    3.2 type "pip install -r requirements.txt" under the terminal
+4. requirements.txt
